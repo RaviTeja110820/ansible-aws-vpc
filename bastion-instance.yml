@@ -24,12 +24,8 @@
         content: "{{key_out.key.private_key}}"
         dest: "./bastion-key.pem"
         mode: 0600
-      register: privatekey2_out
       when: key_out.changed
 
-
-    - debug:
-        var: privatekey2_out
 
     - name: Create Sec Grp for bastion host
       ec2_group:
