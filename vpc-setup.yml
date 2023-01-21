@@ -65,7 +65,7 @@
         map_public: yes
         resource_tags:
           Name: vprofile_PrivSub1
-      register: PrivSub1_out
+      register: privSub1_out
 
     - name: create Private Subnet 2 in zone2
       ec2_vpc_subnet:
@@ -77,7 +77,7 @@
         map_public: yes
         resource_tags:
           Name: vprofile_PrivSub2
-      register: PrivSub2_out
+      register: privSub2_out
 
     - name: create Private Subnet 3 in zone3
       ec2_vpc_subnet:
@@ -89,7 +89,7 @@
         map_public: yes
         resource_tags:
           Name: vprofile_PrivSub3
-      register: PrivSub3_out
+      register: privSub3_out
 
     - name: create internet gateway setup
       ec2_vpc_igw:
