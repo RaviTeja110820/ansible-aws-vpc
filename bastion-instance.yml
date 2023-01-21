@@ -24,8 +24,9 @@
         content: "{{key_out.key.private_key}}"
         dest: "./bastion-key.pem"
         mode: 0600
-      when: key_out.changed
       register: privatekey2_out
+      when: key_out.changed
+
 
     - debug:
         var: privatekey2_out
