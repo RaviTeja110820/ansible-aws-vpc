@@ -26,7 +26,7 @@
         az: "{{zone1}}"
         state: "{{state}}"
         cidr: "{{PubSub1Cidr}}"
-        nap_public: yes
+        map_public: yes
         resource_tags:
           Name: vprofile_pubsub1
       register: pubsub1_out
@@ -38,7 +38,7 @@
         az: "{{zone2}}"
         state: "{{state}}"
         cidr: "{{PubSub2Cidr}}"
-        nap_public: yes
+        map_public: yes
         resource_tags:
           Name: vprofile_pubsub2
       register: pubsub2_out
@@ -50,7 +50,7 @@
         az: "{{zone3}}"
         state: "{{state}}"
         cidr: "{{PubSub3Cidr}}"
-        nap_public: yes
+        map_public: yes
         resource_tags:
           Name: vprofile_pubsub3
       register: pubsub3_out
@@ -62,7 +62,7 @@
         az: "{{zone1}}"
         state: "{{state}}"
         cidr: "{{PrivSub1Cidr}}"
-        nap_public: yes
+        map_public: yes
         resource_tags:
           Name: vprofile_PrivSub1
       register: PrivSub1_out
@@ -74,7 +74,7 @@
         az: "{{zone2}}"
         state: "{{state}}"
         cidr: "{{PrivSub2Cidr}}"
-        nap_public: yes
+        map_public: yes
         resource_tags:
           Name: vprofile_PrivSub2
       register: PrivSub2_out
@@ -86,7 +86,7 @@
         az: "{{zone3}}"
         state: "{{state}}"
         cidr: "{{PrivSub3Cidr}}"
-        nap_public: yes
+        map_public: yes
         resource_tags:
           Name: vprofile_PrivSub3
       register: PrivSub3_out
